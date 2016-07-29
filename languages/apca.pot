@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the apca-wptheme package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: apca-wptheme 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-29 16:49-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: archive-indicator.php:7
+msgid "Indicators"
+msgstr ""
+
+#: header.php:42
+msgid "Search anything..."
+msgstr ""
+
+#: inc/indicators.php:18
+msgctxt "post type general name"
+msgid "Indicators"
+msgstr ""
+
+#: inc/indicators.php:19
+msgctxt "post type singular name"
+msgid "Indicator"
+msgstr ""
+
+#: inc/indicators.php:20
+msgctxt "admin menu"
+msgid "Indicators"
+msgstr ""
+
+#: inc/indicators.php:21
+msgctxt "add new on admin bar"
+msgid "Indicator"
+msgstr ""
+
+#: inc/indicators.php:22
+msgctxt "indicator"
+msgid "Add new"
+msgstr ""
+
+#: inc/indicators.php:23
+msgid "Add new indicator"
+msgstr ""
+
+#: inc/indicators.php:24
+msgid "New indicator"
+msgstr ""
+
+#: inc/indicators.php:25
+msgid "Edit indicator"
+msgstr ""
+
+#: inc/indicators.php:26
+msgid "View indicator"
+msgstr ""
+
+#: inc/indicators.php:27
+msgid "All indicators"
+msgstr ""
+
+#: inc/indicators.php:28
+msgid "Search indicators"
+msgstr ""
+
+#: inc/indicators.php:29
+msgid "Parent indicators:"
+msgstr ""
+
+#: inc/indicators.php:30
+msgid "No indicators found."
+msgstr ""
+
+#: inc/indicators.php:31
+msgid "No indicators found in Trash."
+msgstr ""
+
+#: inc/indicators.php:36
+msgid "APCA Indicators"
+msgstr ""
+
+#: inc/indicators.php:81
+msgid "Indicator data"
+msgstr ""
+
+#: inc/indicators.php:85
+msgid "Indicator status text"
+msgstr ""
+
+#: inc/indicators.php:96
+msgid "Indicator status"
+msgstr ""
+
+#: inc/indicators.php:100
+msgid "Not accomplished"
+msgstr ""
+
+#: inc/indicators.php:101
+msgid "Partially accomplished"
+msgstr ""
+
+#: inc/indicators.php:102
+msgid "Accomplished"
+msgstr ""
