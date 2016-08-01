@@ -3,7 +3,7 @@
 <section id="archive">
   <header class="archive-header">
     <div class="container">
-      <div class="nine columns">
+      <div class="twelve columns">
         <h1><?php _e('Indicators', 'apca'); ?></h1>
       </div>
     </div>

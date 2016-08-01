@@ -11,6 +11,7 @@
     <div class="container">
       <div class="twelve columns">
         <div class="brand <?php echo arp_get_brand_class(); ?>">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redparques.png" />
           <h1 class="title">
             <?php
             $lang = '';
