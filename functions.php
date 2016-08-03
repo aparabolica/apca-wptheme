@@ -16,8 +16,17 @@ function apca_register_required_plugins() {
       'slug' => 'advanced-custom-field-repeater-collapser',
       'required' => true,
       'force_activation' => true
-    ),
+    )
   );
+  if(defined('ACF_REPEATER_FIELD_KEY')) {
+    $plugins[] = array(
+      'name' => 'Advanced Custom Fields: Repeater Field',
+      'slug' => 'repeater-field',
+      'required' => true,
+      'force_activation' => true,
+      'source' => 'https://download.advancedcustomfields.com/' . ACF_REPEATER_FIELD_KEY . '/trunk/'
+    );
+  }
   $options = array(
     'default_path'  => '',
     'menu'      => 'apca-install-plugins',
