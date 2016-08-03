@@ -12,6 +12,11 @@
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
       <article id="indicator-<?php the_ID(); ?>">
         <div class="container">
+          <div class="eight columns offset-by-four">
+            <h2><?php the_title(); ?></h2>
+          </div>
+        </div>
+        <div class="container">
           <div class="four columns">
             <?php
             $status_field = get_field_object('indicator_status');
@@ -19,10 +24,19 @@
             $status_label = $status_field['choices'][$status_value];
             ?>
             <p class="status"><?php echo $status_label; ?></p>
+            <p class="status-text"><?php the_field('indicator_status_text'); ?></p>
           </div>
           <div class="eight columns">
-            <h2><?php the_title(); ?></h2>
-            <p><?php the_field('indicator_status_text'); ?></p>
+            <div class="excerpt">
+              <?php the_excerpt(); ?>
+            </div>
+            <?php if(have_rows('indicator_links')) : ?>
+              <div class="links">
+                <?php while(have_rows('indicator_links')) : the_row(); ?>
+                  <a class="button" target="_blank" rel="external" href="<?php the_sub_field('link_url'); ?>"><?php the_sub_field('link_title'); ?></a>
+                <?php endwhile; ?>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
       </article>

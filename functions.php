@@ -6,4 +6,29 @@ function apca_scripts() {
 }
 add_action('wp_enqueue_scripts', 'apca_scripts');
 
+/*
+ * Required plugins
+ */
+function apca_register_required_plugins() {
+  $plugins = array(
+    array(
+      'name' => 'Advanced Custom Fields Repeater & Flexible Content Fields Collapser',
+      'slug' => 'advanced-custom-field-repeater-collapser',
+      'required' => true,
+      'force_activation' => true
+    ),
+  );
+  $options = array(
+    'default_path'  => '',
+    'menu'      => 'apca-install-plugins',
+    'has_notices'  => true,
+    'dismissable'  => true,
+    'dismiss_msg'  => '',
+    'is_automatic'  => false,
+    'message'    => ''
+  );
+  tgmpa($plugins, $options);
+}
+add_action('tgmpa_register', 'apca_register_required_plugins');
+
 include_once(STYLESHEETPATH . '/inc/indicators.php');

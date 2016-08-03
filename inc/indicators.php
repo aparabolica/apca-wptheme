@@ -44,7 +44,7 @@ class APCA_Indicators {
       'has_archive'        => true,
       'hierarchical'       => false,
       'menu_position'      => 5,
-      'supports'           => array( 'title', 'thumbnail', 'excerpt' )
+      'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' )
     );
 
     register_post_type( 'indicator', $args );
@@ -105,18 +105,47 @@ class APCA_Indicators {
     				'allow_null' => 0,
     				'multiple' => 0,
     			),
-    			array (
-    				'key' => 'field_indicator_link',
-    				'label' => 'Link',
-    				'name' => 'indicator_link',
-    				'type' => 'text',
-    				'default_value' => '',
-    				'placeholder' => '',
-    				'prepend' => '',
-    				'append' => '',
-    				'formatting' => 'html',
-    				'maxlength' => '',
-    			),
+          array (
+            'key' => 'field_indicator_links',
+            'label' => __('Indicator links', 'apca'),
+            'name' => 'indicator_links',
+            'type' => 'repeater',
+            'instructions' => __('Add custom links to the indicator', 'apca'),
+            'sub_fields' => array (
+              array (
+                'key' => 'field_link_url',
+                'label' => __('Link URL', 'apca'),
+                'name' => 'link_url',
+                'type' => 'text',
+                'required' => 1,
+                'column_width' => '',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+              ),
+              array (
+                'key' => 'field_link_title',
+                'label' => __('Link title', 'apca'),
+                'name' => 'link_title',
+                'type' => 'text',
+                'required' => 1,
+                'column_width' => '',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+              ),
+            ),
+            'row_min' => '',
+            'row_limit' => '',
+            'layout' => 'table',
+            'button_label' => __('Add Row', 'apca'),
+          ),
     		),
     		'location' => array (
     			array (
