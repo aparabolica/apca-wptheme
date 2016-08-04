@@ -29,6 +29,14 @@
     background: #111;
     border-bottom-width: 1px;
     border-bottom-color: lighten(#111, 20%);
+    &.transparent {
+      background: transparent;
+      border-bottom-color: transparent;
+      .brand:before,
+      .brand:after {
+        display: none;
+      }
+    }
     .brand {
       position: relative;
       img {
@@ -71,22 +79,29 @@
 #welcome {
   margin-top: -300px;
   padding-top: 300px;
-  padding-bottom: 130px;
+  padding-bottom: 6rem;
   .welcome-content {
-    background: transparent;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
     border: 0;
-    box-shadow: 0 0 0 0;
-    padding: 0;
+    box-shadow: 0 0 6rem rgba(0,0,0,.5);
+    padding: 6rem 0;
+    color: #111;
+    position: relative;
+    z-index: 3;
     .headline-content {
-      padding-top: 4rem;
+      // background: #fff;
+      padding: 4rem;
       h2 {
         text-transform: uppercase;
         margin: 0;
         font-size: 2em;
+        font-weight: 800;
       }
       p {
         font-size: 1.4em;
         font-weight: 500;
+        color: #333;
       }
       .button {
         background: rgba(0,0,0,0.7);
@@ -132,10 +147,10 @@
 }
 
 #social {
-  background: @darkgreen;
+  background: #333;
   .social-bg {
-    border-color: lighten(@darkgreen, 5%);
-    background: @darkgreen;
+    border-color: #333;
+    background: #333;
   }
 }
 

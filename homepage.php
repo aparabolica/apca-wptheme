@@ -9,23 +9,25 @@
 
   <section id="welcome">
     <div class="container">
-    <div class="ten columns offset-by-one">
-      <div class="welcome-content">
-        <div class="six columns">
-          <div class="headline-content">
-            <h2><?php echo arp_get_headline(); ?></h2>
-            <p><?php echo arp_get_headline_description(); ?></p>
-            <p><a class="button" href="<?php echo arp_get_headline_url(); ?>"><?php _e('Learn more', 'arp'); ?></a></p>
-          </div>
-        </div>
-        <div class="four columns offset-by-two">
-          <div class="amazon-vision">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/amazon_vision.png" />
+      <div class="twelve columns">
+        <div class="welcome-content">
+          <div class="container">
+            <div class="six columns">
+              <div class="headline-content">
+                <h2><?php echo arp_get_headline(); ?></h2>
+                <p><?php echo arp_get_headline_description(); ?></p>
+                <p><a class="button" href="<?php echo arp_get_headline_url(); ?>"><?php _e('Learn more', 'arp'); ?></a></p>
+              </div>
+            </div>
+            <div class="four columns offset-by-two">
+              <div class="amazon-vision">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/amazon_vision.png" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
     <?php
     $header = get_custom_header();
     $image = get_post($header->attachment_id);
