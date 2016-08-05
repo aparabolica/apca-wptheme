@@ -9,7 +9,7 @@
 
   <section id="welcome">
     <div class="container">
-      <div class="twelve columns">
+      <div class="ten columns offset-by-one">
         <div class="welcome-content">
           <div class="container">
             <div class="six columns">

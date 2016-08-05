@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-04 13:49-0300\n"
+"POT-Creation-Date: 2016-08-05 12:25-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,46 +106,46 @@ msgstr ""
 msgid "APCA Indicators"
 msgstr ""
 
-#: inc/indicators.php:81
+#: inc/indicators.php:82
 msgid "Indicator data"
 msgstr ""
 
-#: inc/indicators.php:85
+#: inc/indicators.php:86
 msgid "Indicator status text"
 msgstr ""
 
-#: inc/indicators.php:96
+#: inc/indicators.php:97
 msgid "Indicator status"
 msgstr ""
 
-#: inc/indicators.php:100
+#: inc/indicators.php:101
 msgid "Not accomplished"
 msgstr ""
 
-#: inc/indicators.php:101
+#: inc/indicators.php:102
 msgid "Partially accomplished"
 msgstr ""
 
-#: inc/indicators.php:102
+#: inc/indicators.php:103
 msgid "Accomplished"
 msgstr ""
 
-#: inc/indicators.php:110
+#: inc/indicators.php:111
 msgid "Indicator links"
 msgstr ""
 
-#: inc/indicators.php:113
+#: inc/indicators.php:114
 msgid "Add custom links to the indicator"
 msgstr ""
 
-#: inc/indicators.php:117
+#: inc/indicators.php:118
 msgid "Link URL"
 msgstr ""
 
-#: inc/indicators.php:131
+#: inc/indicators.php:132
 msgid "Link title"
 msgstr ""
 
-#: inc/indicators.php:147
+#: inc/indicators.php:148
 msgid "Add Row"
 msgstr ""
