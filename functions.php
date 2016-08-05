@@ -41,3 +41,11 @@ function apca_register_required_plugins() {
 add_action('tgmpa_register', 'apca_register_required_plugins');
 
 include_once(STYLESHEETPATH . '/inc/indicators.php');
+
+function apca_disable_basins() {
+  global $arp_basins;
+  remove_action('init', array($arp_basins, 'register_post_type'));
+  remove_action('init', array($arp_basins, 'register_field_group'));
+  remove_filter('the_permalink', array($arp_basins, 'the_permalink'));
+}
+add_action('init', 'apca_disable_basins', 2);
