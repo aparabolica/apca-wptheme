@@ -17,19 +17,8 @@
       ?>
       <article id="indicator-<?php the_ID(); ?>" class="status-<?php echo $status_value; ?>">
         <div class="container">
-          <div class="eight columns offset-by-four">
+          <div class="seven columns">
             <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-          </div>
-        </div>
-        <div class="container">
-          <div class="four columns">
-            <div class="status-icon">
-              <img src="<?php echo apca_get_indicator_status_image_url(); ?>" />
-            </div>
-            <p class="status"><?php echo $status_label; ?></p>
-            <p class="status-text"><?php the_field('indicator_status_text'); ?></p>
-          </div>
-          <div class="eight columns">
             <div class="excerpt">
               <?php the_excerpt(); ?>
             </div>
@@ -40,6 +29,13 @@
                 <?php endwhile; ?>
               </div>
             <?php endif; ?>
+          </div>
+          <div class="five columns">
+            <div class="status-icon">
+              <img src="<?php echo apca_get_indicator_status_image_url(); ?>" />
+            </div>
+            <p class="status"><?php echo $status_label; ?></p>
+            <p class="status-text"><?php the_field('indicator_status_text'); ?></p>
           </div>
         </div>
       </article>
