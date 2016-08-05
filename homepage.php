@@ -111,6 +111,33 @@
     </div>
   </section>
 
+  <?php query_posts('post_type=indicator&posts_per_page=-1'); ?>
+  <?php if(have_posts()) : ?>
+    <section id="indicators" class="page-section">
+      <div class="container">
+        <div class="twelve columns">
+          <h2 class="section-title">Indicators</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="twelve columns">
+          <ul>
+            <?php while(have_posts()) : the_post(); ?>
+              <li>
+                <article id="post-<?php the_ID(); ?>" class="indicator status-<?php the_field('indicator_status'); ?>">
+                  <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                  <?php the_excerpt(); ?>
+                  <a class="button" href="<?php the_permalink(); ?>"><?php _e('Learn more', 'apca'); ?></a>
+                </article>
+              </li>
+            <?php endwhile; ?>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <?php endif; ?>
+  <?php wp_reset_query(); ?>
+
 <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

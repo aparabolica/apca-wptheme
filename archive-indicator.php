@@ -10,7 +10,12 @@
   </header>
   <section class="archive-content indicators-content">
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-      <article id="indicator-<?php the_ID(); ?>">
+      <?php
+      $status_field = get_field_object('indicator_status');
+      $status_value = get_field('indicator_status');
+      $status_label = $status_field['choices'][$status_value];
+      ?>
+      <article id="indicator-<?php the_ID(); ?>" class="status-<?php echo $status_value; ?>">
         <div class="container">
           <div class="eight columns offset-by-four">
             <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
@@ -18,11 +23,9 @@
         </div>
         <div class="container">
           <div class="four columns">
-            <?php
-            $status_field = get_field_object('indicator_status');
-            $status_value = get_field('indicator_status');
-            $status_label = $status_field['choices'][$status_value];
-            ?>
+            <div class="status-icon">
+              <img src="<?php echo apca_get_indicator_status_image_url(); ?>" />
+            </div>
             <p class="status"><?php echo $status_label; ?></p>
             <p class="status-text"><?php the_field('indicator_status_text'); ?></p>
           </div>

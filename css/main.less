@@ -1,5 +1,21 @@
 @darkgreen: #1a6d27;
 @lightgreen: #6cb028;
+@lightyellow: #c4c731;
+@lightred: #d74a3d;
+
+button,
+.button,
+a.button,
+input[type='submit'] {
+  background: @lightgreen;
+  &:focus,
+  &:hover {
+    background: lighten(@lightgreen, 5%);
+  }
+  &:active {
+    background: lighten(@lightgreen, 7%);
+  }
+}
 
 .brand {
   img {
@@ -158,6 +174,76 @@
   }
 }
 
+#map {
+  margin: 0 0 4rem;
+}
+
+#indicators {
+  margin: 0 0 6rem;
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    li {
+      flex: 1 1 25%;
+      margin: 0;
+      padding: 4rem;
+      background: #f5f5f5;
+      .status {
+        margin: 0 0 2rem;
+        .status-icon {
+          width: 40%;
+          padding-top: 40%;
+          background: @lightgreen;
+          margin: auto;
+          height: 0;
+          border-radius: 100%;
+          position: relative;
+          img {
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            left: 25%;
+            display: block;
+            width: 50%;
+            height: auto;
+          }
+        }
+      }
+      .indicator.status-1 .status .status-icon {
+        background: @lightred;
+      }
+      .indicator.status-2 .status .status-icon {
+        background: @lightyellow;
+      }
+      .indicator.status-3 .status .status-icon {
+        background: @lightgreen;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.6em;
+        letter-spacing: .1rem;
+        text-align: center;
+        a {
+          color: inherit;
+          text-decoration: none;
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+      .button {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
 #single {
   .article-header {
     background-image: url(http://redparques.com/wp-content/uploads/2015/01/MANGLAREs.jpg);
@@ -200,10 +286,44 @@
       background: #f0f0f0;
       &:nth-child(odd) {
         background: #f8f8f8;
+        .status-text {
+          // background: #eee;
+        }
       }
       &:last-child {
         border: 0;
         margin: 0;
+      }
+      h2 {
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+      }
+      &.status-1 .status-icon {
+        background: @lightred;
+      }
+      &.status-2 .status-icon {
+        background: @lightyellow;
+      }
+      &.status-3 .status-icon {
+        background: @lightgreen;
+      }
+      .status-icon {
+        width: 40%;
+        padding-top: 40%;
+        background: @lightgreen;
+        margin: 0 auto 2rem;
+        height: 0;
+        border-radius: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          top: 50%;
+          margin-top: -12px;
+          left: 25%;
+          display: block;
+          width: 50%;
+          height: auto;
+        }
       }
       .status {
         text-transform: uppercase;
@@ -211,9 +331,6 @@
         display: block;
         text-align: center;
         margin: 0 0 2rem;
-        padding: 1rem;
-        background: #ddd;
-        border-radius: 3px;
         font-weight: 600;
       }
       .status-text {

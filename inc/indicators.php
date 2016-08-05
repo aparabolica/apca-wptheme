@@ -74,6 +74,29 @@ class APCA_Indicators {
     return $field;
   }
 
+  function get_status_image_url($post_id = false) {
+    global $post;
+    $post_id = $post_id ? $post_id : $post->ID;
+    $status_field = get_field_object('indicator_status');
+    $status_value = get_field('indicator_status');
+    $img = get_stylesheet_directory_uri() . '/img';
+    switch ($status_value) {
+      case 1:
+        $img .= '/indicator_01_.png';
+        break;
+      case 2:
+        $img .= '/indicator_02_.png';
+        break;
+      case 3:
+        $img .= '/indicator_03_.png';
+        break;
+      default:
+        $img = '';
+        break;
+    }
+    return $img;
+  }
+
 
   function register_field_group() {
     if(function_exists("register_field_group")) {
@@ -180,4 +203,7 @@ class APCA_Indicators {
 
 $apca_indicators = new APCA_Indicators();
 
-?>
+function apca_get_indicator_status_image_url($post_id = false) {
+  global $apca_indicators;
+  return $apca_indicators->get_status_image_url($post_id);
+}
