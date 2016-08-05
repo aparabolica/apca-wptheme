@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-05 18:38-0300\n"
+"POT-Creation-Date: 2016-08-05 18:58-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Connect with us"
 msgstr ""
 
-#: homepage.php:82
+#: homepage.php:82 library.php:29
 msgid "Latest news"
 msgstr ""
 
@@ -148,4 +148,26 @@ msgstr ""
 
 #: inc/indicators.php:171
 msgid "Add Row"
+msgstr ""
+
+#: library.php:61
+msgid "Publications"
+msgstr ""
+
+#: library.php:86
+msgid "Stay tuned"
+msgstr ""
+
+#: library.php:95
+msgid ""
+"United for the conservation of biodiversity in Latin America and the "
+"Caribbean."
+msgstr ""
+
+#: library.php:96
+msgid "Take action"
+msgstr ""
+
+#: library.php:105
+msgid "Policy Documents"
 msgstr ""
