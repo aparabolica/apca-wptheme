@@ -7,8 +7,11 @@
 class APCA_Indicators {
 
   function __construct() {
+    $this->register_options_page();
     add_action('init', array($this, 'register_post_type'));
     add_action('init', array($this, 'register_field_group'));
+    add_action('init', array($this, 'register_options_field_group'));
+    // add_action('init', array($this, 'register_options_page'), 100);
     add_action('pre_get_posts', array($this, 'pre_get_posts'));
   }
 
@@ -191,6 +194,63 @@ class APCA_Indicators {
     		'menu_order' => 0,
     	));
     }
+  }
+
+  function register_options_page() {
+    if(function_exists('acf_add_options_sub_page')) {
+      acf_add_options_sub_page(array(
+        'title' => __('Indicator settings', 'apca'),
+        'parent' => 'edit.php?post_type=indicator'
+      ));
+    }
+  }
+
+  function register_options_field_group() {
+    if(function_exists("register_field_group")) {
+    	register_field_group(array (
+    		'id' => 'acf_indicator-settings',
+    		'title' => 'Indicator Settings',
+    		'fields' => array (
+    			array (
+    				'key' => 'field_indicator_page_content',
+    				'label' => __('Page content', 'apca'),
+    				'name' => 'indicator_page_content',
+    				'type' => $this->get_wysiwyg_field(),
+    				'default_value' => '',
+    				'toolbar' => 'full',
+    				'media_upload' => 'yes',
+    			),
+    			array (
+    				'key' => 'field_indicator_page_disclaimer',
+    				'label' => __('Page disclaimer', 'apca'),
+    				'name' => 'indicator_page_disclaimer',
+    				'type' => $this->get_wysiwyg_field(),
+    				'default_value' => '',
+    				'toolbar' => 'full',
+    				'media_upload' => 'yes',
+    			),
+    		),
+    		'location' => array (
+    			array (
+    				array (
+    					'param' => 'options_page',
+    					'operator' => '==',
+    					'value' => 'acf-options-indicator-settings',
+    					'order_no' => 0,
+    					'group_no' => 0,
+    				),
+    			),
+    		),
+    		'options' => array (
+    			'position' => 'normal',
+    			'layout' => 'no_box',
+    			'hide_on_screen' => array (
+    			),
+    		),
+    		'menu_order' => 0,
+    	));
+    }
+
   }
 
   function pre_get_posts($query) {

@@ -9,6 +9,15 @@
     </div>
   </header>
   <section class="archive-content indicators-content">
+    <div class="indicator-content-container">
+      <div class="container">
+        <div class="twelve columns">
+          <div class="indicator-content">
+            <?php the_field('indicator_page_content', 'option'); ?>
+          </div>
+        </div>
+      </div>
+    </div>
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
       <?php
       $status_field = get_field_object('indicator_status');
@@ -40,6 +49,15 @@
         </div>
       </article>
     <?php endwhile; endif; ?>
+    <div class="indicator-disclaimer-container">
+      <div class="container">
+        <div class="twelve columns">
+          <div class="indicator-disclaimer">
+            <?php the_field('indicator_page_content', 'option'); ?>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </section>
 
