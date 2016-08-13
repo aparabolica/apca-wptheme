@@ -16,7 +16,7 @@
               <div class="headline-content">
                 <h2><?php echo arp_get_headline(); ?></h2>
                 <p><?php echo arp_get_headline_description(); ?></p>
-                <p><a class="button" href="<?php echo arp_get_headline_url(); ?>"><?php _e('Learn more', 'arp'); ?></a></p>
+                <p><a class="button" href="<?php echo arp_get_headline_url(); ?>"><?php _e('Learn more', 'apca'); ?></a></p>
               </div>
             </div>
             <div class="four columns offset-by-two">
@@ -34,7 +34,7 @@
     ?>
     <div class="bg-caption"><?php echo apply_filters('the_content', $image->post_excerpt); ?></div>
   </section>
-  <div class="container">
+  <div class="container full">
     <div class="nine columns">
       <?php
       query_posts('post_type=carousel&posts_per_page=-1');
@@ -73,13 +73,13 @@
       <section id="social">
         <div class="social-bg"></div>
         <div class="social-content">
-          <h2><?php _e('Connect with us', 'arp'); ?></h2>
+          <h2><?php _e('Connect with us', 'apca'); ?></h2>
           <a class="fa fa-facebook" href="https://www.facebook.com/WWFLivingAmazonInitiative/" target="_blank" rel="extenal" title="Facebook"></a>
           <a class="fa fa-youtube" href="https://www.youtube.com/user/LivingAmazon" target="_blank" rel="external" title="YouTube"></a>
         </div>
       </section>
       <section id="latest" class="page-section clean">
-        <h2 class="section-title"><?php _e('Latest news', 'arp'); ?></h2>
+        <h2 class="section-title"><?php _e('Latest news', 'apca'); ?></h2>
         <?php
         query_posts('posts_per_page=3');
         if(have_posts()) :
@@ -95,6 +95,7 @@
         endif;
         wp_reset_query();
         ?>
+        <p><a class="button" href="<?php echo home_url('/library/'); ?>"><?php _e('Meet the library', 'apca'); ?></a></p>
       </section>
     </div>
   </div>
@@ -116,7 +117,7 @@
     <section id="indicators" class="page-section">
       <div class="container">
         <div class="twelve columns">
-          <h2 class="section-title">Indicators</h2>
+          <h2 class="section-title">Indicators <a class="button" href="<?php echo get_post_type_archive_link('indicator'); ?>"><?php _e('View all indicators', 'apca'); ?></a></h2>
         </div>
       </div>
       <div class="container">

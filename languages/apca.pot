@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-13 18:02-0300\n"
+"POT-Creation-Date: 2016-08-13 18:19-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,8 +37,16 @@ msgstr ""
 msgid "Latest news"
 msgstr ""
 
-#: homepage.php:104
+#: homepage.php:98
+msgid "Meet the library"
+msgstr ""
+
+#: homepage.php:105
 msgid "Amazon Protected Areas"
+msgstr ""
+
+#: homepage.php:120
+msgid "View all indicators"
 msgstr ""
 
 #: inc/indicators.php:21

@@ -17,6 +17,11 @@ input[type='submit'] {
   }
 }
 
+.container.full {
+  width: 100%;
+  max-width: 1920px;
+}
+
 .brand {
   img {
     float: none;
@@ -35,6 +40,25 @@ input[type='submit'] {
     font-size: 3em;
     .subject {
       letter-spacing: -.05em;
+    }
+  }
+}
+
+.page-section {
+  .section-title {
+    button,
+    .button,
+    a.button,
+    input[type=submit] {
+      background: #f0f0f0;
+      color: #666;
+      margin-left: 2rem;
+      &:hover,
+      &:focus,
+      &:active {
+        background: #e6e6e6;
+        color: #333;
+      }
     }
   }
 }
@@ -164,6 +188,17 @@ input[type='submit'] {
 
 #carousel {
   margin-top: 0;
+  margin-bottom: 0;
+  img {
+    border: 0;
+  }
+  .carousel-item {
+    .carousel-item-meta {
+      margin: 0;
+      padding: 4rem;
+      background: #f0f0f0;
+    }
+  }
 }
 
 #social {
@@ -414,4 +449,9 @@ input[type='submit'] {
 
 #latest {
   padding-top: 4rem;
+  a.button {
+    margin-top: 4rem;
+    display: block;
+    width: 100%;
+  }
 }
