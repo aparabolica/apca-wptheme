@@ -49,6 +49,24 @@ function apca_register_required_plugins() {
 }
 add_action('tgmpa_register', 'apca_register_required_plugins');
 
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function apca_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => __('Footer sidebar', 'apca'),
+		'id'            => 'footer',
+		'before_widget' => '<div class="widget-item">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'apca_widgets_init' );
+
 include_once(STYLESHEETPATH . '/inc/indicators.php');
 
 function apca_disable_basins() {

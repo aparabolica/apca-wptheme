@@ -460,3 +460,39 @@ input[type='submit'] {
     width: 100%;
   }
 }
+
+#footer-widgets {
+  background: #f0f0f0;
+  padding: 4rem 0;
+  margin: 0;
+  .widgets-container {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    .widget-item {
+      flex: 1 1 25%;
+      box-sizing: border-box;
+      padding: 2rem;
+      .widget-title {
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-weight: 600;
+        color: #999;
+      }
+      a {
+        color: #333;
+        &:hover {
+          color: #000;
+        }
+      }
+      ul {
+        list-style: none;
+        li {
+          padding: .5rem 0;
+          border-bottom: 1px solid #ddd;
+        }
+      }
+    }
+  }
+}
