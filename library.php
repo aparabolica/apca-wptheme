@@ -29,13 +29,15 @@
     <?php endif; ?>
   <?php endif; ?>
   <?php
+  $news_id = get_cat_ID('news');
+  $news_link = get_category_link($news_id);
   query_posts('posts_per_page=3&category_name=news');
   if(have_posts()) :
     ?>
     <section id="latest" class="page-section">
       <div class="container">
         <div class="twelve columns">
-          <h2 class="section-title"><?php _e('Latest news', 'apca'); ?></h2>
+          <h2 class="section-title"><?php _e('Latest news', 'apca'); ?> <a class="button" href="<?php echo $news_link ?>"><?php _e('View all news', 'apca'); ?></a></h2>
         </div>
       </div>
       <div class="post-list latest-list">
@@ -63,11 +65,13 @@
   <div class="container">
     <div class="six columns">
       <?php
+      $publications_id = get_cat_ID('publications');
+      $publications_link = get_category_link($publications_id);
       query_posts('posts_per_page=3&category_name=publications');
       if(have_posts()) :
         ?>
         <section id="publications" class="page-section">
-          <h2 class="section-title"><?php _e('Publications', 'apca'); ?></h2>
+          <h2 class="section-title"><?php _e('Publications', 'apca'); ?> <a class="button" href="<?php echo $publications_link ?>"><?php _e('View all publications', 'apca'); ?></a></h2>
           <?php
           while(have_posts()) :
             the_post();
@@ -92,11 +96,13 @@
     </div>
     <div class="six columns">
       <?php
+      $docs_id = get_cat_ID('policy documents');
+      $docs_link = get_category_link($docs_id);
       query_posts('posts_per_page=1&category_name=policy-documents');
       if(have_posts()) :
         ?>
         <section id="policy-documents" class="page-section">
-          <h2 class="section-title"><?php _e('Policy Documents', 'apca'); ?></h2>
+          <h2 class="section-title"><?php _e('Policy Documents', 'apca'); ?> <a class="button" href="<?php echo $docs_link ?>"><?php _e('View all policy documents', 'apca'); ?></a></h2>
           <?php
           while(have_posts()) :
             the_post();
