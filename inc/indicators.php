@@ -13,6 +13,7 @@ class APCA_Indicators {
     add_action('init', array($this, 'register_options_field_group'));
     // add_action('init', array($this, 'register_options_page'), 100);
     add_action('pre_get_posts', array($this, 'pre_get_posts'));
+    add_shortcode('indicator_status', array($this, 'status_shortcode'));
   }
 
   function register_post_type() {
@@ -77,27 +78,56 @@ class APCA_Indicators {
     return $field;
   }
 
-  function get_status_image_url($post_id = false) {
+  function get_status_image_url($status = 1) {
+    return get_stylesheet_directory_uri() . '/img/indicator_0' . $status .'_.png';
+  }
+
+  function get_status_label($status = 1) {
+    $label = '';
+    switch($status) {
+      case '1':
+        $label = __('Not accomplished', 'apca');
+        break;
+      case '2':
+        $label = __('Partially accomplished', 'apca');
+        break;
+      case '3':
+        $label = __('Accomplished', 'apca');
+        break;
+    }
+    return $label;
+  }
+
+  function get_post_status_image_url($post_id = false) {
     global $post;
     $post_id = $post_id ? $post_id : $post->ID;
     $status_field = get_field_object('indicator_status');
     $status_value = get_field('indicator_status');
-    $img = get_stylesheet_directory_uri() . '/img';
-    switch ($status_value) {
-      case 1:
-        $img .= '/indicator_01_.png';
-        break;
-      case 2:
-        $img .= '/indicator_02_.png';
-        break;
-      case 3:
-        $img .= '/indicator_03_.png';
-        break;
-      default:
-        $img = '';
-        break;
-    }
-    return $img;
+    return $this->get_status_image_url($status_value);
+  }
+
+  function status_shortcode($atts, $content = null) {
+    $a = shortcode_atts( array(
+      'status' => '1'
+    ), $atts );
+
+    $url = $this->get_status_image_url($a['status']);
+    $label = $this->geT_status_label($a['status']);
+
+    ob_start();
+    ?>
+    <div class="indicator-status status-<?php echo $a['status']; ?>">
+      <div class="status-icon-container">
+        <div class="status-icon">
+          <img src="<?php echo $url; ?>" />
+        </div>
+        <p class="status"><?php echo $label; ?></p>
+      </div>
+      <p class="status-text"><?php echo $content; ?></p>
+    </div>
+    <?php
+    return ob_get_clean();
+
   }
 
 
@@ -265,5 +295,5 @@ $apca_indicators = new APCA_Indicators();
 
 function apca_get_indicator_status_image_url($post_id = false) {
   global $apca_indicators;
-  return $apca_indicators->get_status_image_url($post_id);
+  return $apca_indicators->get_post_status_image_url($post_id);
 }

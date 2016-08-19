@@ -463,6 +463,124 @@ input[type='submit'] {
   }
 }
 
+#single {
+  .article-content {
+    h2,
+    h3 {
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+    }
+    h3 {
+      color: #444;
+    }
+  }
+}
+
+.single-indicator {
+  #single {
+    .article-header {
+      padding: 6rem 0 13rem;
+      h1 {
+        margin-top: 4rem;
+        border-top: 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    #indicator-status,
+    .indicator-status {
+      &.status-1 .status-icon {
+        background: @lightred;
+      }
+      &.status-2 .status-icon {
+        background: @lightyellow;
+      }
+      &.status-3 .status-icon {
+        background: @lightgreen;
+      }
+      .status-icon {
+        width: 40%;
+        padding-top: 40%;
+        background: @lightgreen;
+        margin: 0 auto 2rem;
+        height: 0;
+        border-radius: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          top: 50%;
+          margin-top: -12px;
+          left: 25%;
+          display: block;
+          width: 50%;
+          height: auto;
+        }
+      }
+      .status {
+        text-transform: uppercase;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        margin: 0 0 2rem;
+        font-weight: 600;
+      }
+      .status-text {
+        background: #e8e8e8;
+        padding: 2rem;
+        margin: 4rem 0;
+        font-size: 1.2em;
+        position: relative;
+        &:after {
+          background: inherit;
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: -10px;
+          margin-left: -10px;
+          width: 20px;
+          height: 20px;
+          transform: rotate(45deg);
+        }
+      }
+    }
+    #indicator-status {
+      margin-top: -20rem;
+    }
+    .indicator-status {
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .status-icon-container {
+        width: 25%;
+        box-sizing: border-box;
+        float: left;
+        .status-icon {
+          width: 100%;
+          padding-top: 100%;
+        }
+      }
+      .status-text {
+        width: 70%;
+        float: right;
+        box-sizing: border-box;
+        display: block;
+        margin: 0 0 4rem;
+        padding: 3rem;
+        font-size: 1.1em;
+        background: #f0f0f0;
+        &:after {
+          top: 10rem;
+          left: -10px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
 #footer-widgets {
   background: #f0f0f0;
   padding: 4rem 0;

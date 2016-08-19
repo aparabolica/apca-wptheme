@@ -117,7 +117,7 @@
     <section id="indicators" class="page-section">
       <div class="container">
         <div class="twelve columns">
-          <h2 class="section-title">Indicators <a class="button" href="<?php echo get_post_type_archive_link('indicator'); ?>"><?php _e('View all indicators', 'apca'); ?></a></h2>
+          <h2 class="section-title"><?php _e('Indicators', 'apca'); ?> <a class="button" href="<?php echo get_post_type_archive_link('indicator'); ?>"><?php _e('View all indicators', 'apca'); ?></a></h2>
         </div>
       </div>
       <div class="container">
@@ -126,7 +126,7 @@
             <?php while(have_posts()) : the_post(); ?>
               <li>
                 <article id="post-<?php the_ID(); ?>" class="indicator status-<?php the_field('indicator_status'); ?>">
-                  <h3><?php the_title(); ?></h3>
+                  <h3><a href="<?php the_permalink(); ?>">"<?php the_title(); ?></a></h3>
                   <div class="status">
                     <div class="status-icon">
                       <img src="<?php echo apca_get_indicator_status_image_url(); ?>" />

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 12:47-0300\n"
+"POT-Creation-Date: 2016-08-19 16:46-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: archive-indicator.php:7
+#: archive-indicator.php:7 homepage.php:120
 msgid "Indicators"
 msgstr ""
 
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Amazon Protected Areas"
 msgstr ""
 
-#: homepage.php:120
+#: homepage.php:120 single-indicator.php:37
 msgid "View all indicators"
 msgstr ""
 
@@ -61,124 +61,124 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
-#: inc/indicators.php:21
+#: inc/indicators.php:22
 msgctxt "post type general name"
 msgid "Indicators"
 msgstr ""
 
-#: inc/indicators.php:22
+#: inc/indicators.php:23
 msgctxt "post type singular name"
 msgid "Indicator"
 msgstr ""
 
-#: inc/indicators.php:23
+#: inc/indicators.php:24
 msgctxt "admin menu"
 msgid "Indicators"
 msgstr ""
 
-#: inc/indicators.php:24
+#: inc/indicators.php:25
 msgctxt "add new on admin bar"
 msgid "Indicator"
 msgstr ""
 
-#: inc/indicators.php:25
+#: inc/indicators.php:26
 msgctxt "indicator"
 msgid "Add new"
 msgstr ""
 
-#: inc/indicators.php:26
+#: inc/indicators.php:27
 msgid "Add new indicator"
 msgstr ""
 
-#: inc/indicators.php:27
+#: inc/indicators.php:28
 msgid "New indicator"
 msgstr ""
 
-#: inc/indicators.php:28
+#: inc/indicators.php:29
 msgid "Edit indicator"
 msgstr ""
 
-#: inc/indicators.php:29
+#: inc/indicators.php:30
 msgid "View indicator"
 msgstr ""
 
-#: inc/indicators.php:30
+#: inc/indicators.php:31
 msgid "All indicators"
 msgstr ""
 
-#: inc/indicators.php:31
+#: inc/indicators.php:32
 msgid "Search indicators"
 msgstr ""
 
-#: inc/indicators.php:32
+#: inc/indicators.php:33
 msgid "Parent indicators:"
 msgstr ""
 
-#: inc/indicators.php:33
+#: inc/indicators.php:34
 msgid "No indicators found."
 msgstr ""
 
-#: inc/indicators.php:34
+#: inc/indicators.php:35
 msgid "No indicators found in Trash."
 msgstr ""
 
-#: inc/indicators.php:39
+#: inc/indicators.php:40
 msgid "APCA Indicators"
 msgstr ""
 
-#: inc/indicators.php:108
-msgid "Indicator data"
-msgstr ""
-
-#: inc/indicators.php:112
-msgid "Indicator status text"
-msgstr ""
-
-#: inc/indicators.php:123
-msgid "Indicator status"
-msgstr ""
-
-#: inc/indicators.php:127
+#: inc/indicators.php:89 inc/indicators.php:157
 msgid "Not accomplished"
 msgstr ""
 
-#: inc/indicators.php:128
+#: inc/indicators.php:92 inc/indicators.php:158
 msgid "Partially accomplished"
 msgstr ""
 
-#: inc/indicators.php:129
+#: inc/indicators.php:95 inc/indicators.php:159
 msgid "Accomplished"
 msgstr ""
 
-#: inc/indicators.php:137
+#: inc/indicators.php:138
+msgid "Indicator data"
+msgstr ""
+
+#: inc/indicators.php:142
+msgid "Indicator status text"
+msgstr ""
+
+#: inc/indicators.php:153
+msgid "Indicator status"
+msgstr ""
+
+#: inc/indicators.php:167
 msgid "Indicator links"
 msgstr ""
 
-#: inc/indicators.php:140
+#: inc/indicators.php:170
 msgid "Add custom links to the indicator"
 msgstr ""
 
-#: inc/indicators.php:144
+#: inc/indicators.php:174
 msgid "Link URL"
 msgstr ""
 
-#: inc/indicators.php:158
+#: inc/indicators.php:188
 msgid "Link title"
 msgstr ""
 
-#: inc/indicators.php:174
+#: inc/indicators.php:204
 msgid "Add Row"
 msgstr ""
 
-#: inc/indicators.php:202
+#: inc/indicators.php:232
 msgid "Indicator settings"
 msgstr ""
 
-#: inc/indicators.php:216
+#: inc/indicators.php:246
 msgid "Page content"
 msgstr ""
 
-#: inc/indicators.php:225
+#: inc/indicators.php:255
 msgid "Page disclaimer"
 msgstr ""
 
