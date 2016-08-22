@@ -126,7 +126,7 @@
             <?php while(have_posts()) : the_post(); ?>
               <li>
                 <article id="post-<?php the_ID(); ?>" class="indicator status-<?php the_field('indicator_status'); ?>">
-                  <h3><a href="<?php the_permalink(); ?>">"<?php the_title(); ?></a></h3>
+                  <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                   <div class="status">
                     <div class="status-icon">
                       <img src="<?php echo apca_get_indicator_status_image_url(); ?>" />
