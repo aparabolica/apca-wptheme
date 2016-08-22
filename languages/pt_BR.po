@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the apca-wptheme package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: apca-wptheme 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-19 16:46-0300\n"
+"PO-Revision-Date: 2016-08-22 11:05-0300\n"
+"Last-Translator: Miguel Peixe <miguspeixe@gmail.com>, 2016\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/ecologia-"
+"digital/teams/63779/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: archive-indicator.php:7 homepage.php:120
+msgid "Indicators"
+msgstr "Indicadores"
+
+#: functions.php:59
+msgid "Footer sidebar"
+msgstr "Barra lateral do rodapé"
+
+#: header.php:43
+msgid "Search anything..."
+msgstr "Busque qualquer coisa..."
+
+#: homepage.php:19
+msgid "Learn more"
+msgstr "Saiba mais"
+
+#: homepage.php:76
+msgid "Connect with us"
+msgstr "Conecte-se conosco"
+
+#: homepage.php:82 library.php:40
+msgid "Latest news"
+msgstr "Últimas notícias"
+
+#: homepage.php:98
+msgid "Meet the library"
+msgstr "Conheça a biblioteca"
+
+#: homepage.php:105
+msgid "Amazon Protected Areas"
+msgstr "Áreas Protegidas da Amazônia"
+
+#: homepage.php:120 single-indicator.php:37
+msgid "View all indicators"
+msgstr "Veja todos os indicadores"
+
+#: inc/custom-featured-image.php:19
+msgid "Featured image for lists"
+msgstr "Imagem destacada para listas"
+
+#: inc/custom-featured-image.php:23
+msgid "Image"
+msgstr "Imagem"
+
+#: inc/indicators.php:22
+msgctxt "post type general name"
+msgid "Indicators"
+msgstr "Indicadores"
+
+#: inc/indicators.php:23
+msgctxt "post type singular name"
+msgid "Indicator"
+msgstr "Indicador"
+
+#: inc/indicators.php:24
+msgctxt "admin menu"
+msgid "Indicators"
+msgstr "Indicadores"
+
+#: inc/indicators.php:25
+msgctxt "add new on admin bar"
+msgid "Indicator"
+msgstr "Indicador"
+
+#: inc/indicators.php:26
+msgctxt "indicator"
+msgid "Add new"
+msgstr "Adicionar novo"
+
+#: inc/indicators.php:27
+msgid "Add new indicator"
+msgstr "Adicionar novo indicador"
+
+#: inc/indicators.php:28
+msgid "New indicator"
+msgstr "Novo indicador"
+
+#: inc/indicators.php:29
+msgid "Edit indicator"
+msgstr "Editar indicador"
+
+#: inc/indicators.php:30
+msgid "View indicator"
+msgstr "Ver indicador"
+
+#: inc/indicators.php:31
+msgid "All indicators"
+msgstr "Todos os indicadores"
+
+#: inc/indicators.php:32
+msgid "Search indicators"
+msgstr "Buscar indicadores"
+
+#: inc/indicators.php:33
+msgid "Parent indicators:"
+msgstr "Indicadores pais:"
+
+#: inc/indicators.php:34
+msgid "No indicators found."
+msgstr "Nenhum indicador encontrado."
+
+#: inc/indicators.php:35
+msgid "No indicators found in Trash."
+msgstr "Nenhum indicador encontrado na lixeira."
+
+#: inc/indicators.php:40
+msgid "APCA Indicators"
+msgstr "Indicadores do APCA"
+
+#: inc/indicators.php:89 inc/indicators.php:157
+msgid "Not accomplished"
+msgstr "Não concluído"
+
+#: inc/indicators.php:92 inc/indicators.php:158
+msgid "Partially accomplished"
+msgstr "Parcialmente concluído"
+
+#: inc/indicators.php:95 inc/indicators.php:159
+msgid "Accomplished"
+msgstr "Concluído"
+
+#: inc/indicators.php:138
+msgid "Indicator data"
+msgstr "Dados do indicador"
+
+#: inc/indicators.php:142
+msgid "Indicator status text"
+msgstr "Texto de status do indicador"
+
+#: inc/indicators.php:153
+msgid "Indicator status"
+msgstr "Status do indicador"
+
+#: inc/indicators.php:167
+msgid "Indicator links"
+msgstr "Links do indicador"
+
+#: inc/indicators.php:170
+msgid "Add custom links to the indicator"
+msgstr "Adicionar links personalizados ao indicador"
+
+#: inc/indicators.php:174
+msgid "Link URL"
+msgstr "URL do link"
+
+#: inc/indicators.php:188
+msgid "Link title"
+msgstr "Título do link"
+
+#: inc/indicators.php:204
+msgid "Add Row"
+msgstr "Adicionar linha"
+
+#: inc/indicators.php:232
+msgid "Indicator settings"
+msgstr "Configurações de indicadores"
+
+#: inc/indicators.php:246
+msgid "Page content"
+msgstr "Conteúdo da página"
+
+#: inc/indicators.php:255
+msgid "Page disclaimer"
+msgstr "Aviso da página"
+
+#: library.php:40
+msgid "View all news"
+msgstr "Veja todas as notícias"
+
+#: library.php:74
+msgid "Publications"
+msgstr "Publicações"
+
+#: library.php:74
+msgid "View all publications"
+msgstr "Veja todas as publicações"
+
+#: library.php:105
+msgid "Policy Documents"
+msgstr "Documentos de política"
+
+#: library.php:105
+msgid "View all policy documents"
+msgstr "Veja todos os documentos de política"

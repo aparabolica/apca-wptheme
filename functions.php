@@ -7,6 +7,14 @@ function apca_scripts() {
 add_action('wp_enqueue_scripts', 'apca_scripts');
 
 /*
+ * Setup theme
+ */
+function apca_setup_theme() {
+  load_child_theme_textdomain('apca', get_stylesheet_directory() . '/languages');
+}
+add_action('after_setup_theme', 'apca_setup_theme');
+
+/*
  * Required plugins
  */
 function apca_register_required_plugins() {
@@ -15,7 +23,7 @@ function apca_register_required_plugins() {
       'name' => 'Advanced Custom Fields Repeater & Flexible Content Fields Collapser',
       'slug' => 'advanced-custom-field-repeater-collapser',
       'required' => true,
-      'force_activation' => true
+      'force_activation' => false
     )
   );
   if(defined('ACF_REPEATER_FIELD_KEY')) {
@@ -23,7 +31,7 @@ function apca_register_required_plugins() {
       'name' => 'Advanced Custom Fields: Repeater Field',
       'slug' => 'repeater-field',
       'required' => true,
-      'force_activation' => true,
+      'force_activation' => false,
       'source' => 'https://download.advancedcustomfields.com/' . ACF_REPEATER_FIELD_KEY . '/trunk/'
     );
   }
@@ -32,7 +40,7 @@ function apca_register_required_plugins() {
       'name' => 'Advanced Custom Fields: Options Page',
       'slug' => 'options-page',
       'required' => true,
-      'force_activation' => true,
+      'force_activation' => false,
       'source' => 'https://download.advancedcustomfields.com/' . ACF_OPTIONS_PAGE_KEY . '/trunk/'
     );
   }
