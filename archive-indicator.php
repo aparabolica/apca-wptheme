@@ -4,7 +4,7 @@
   <header class="archive-header">
     <div class="container">
       <div class="twelve columns">
-        <h1><?php _e('Indicators', 'apca'); ?></h1>
+        <h1><?php _e('Aichi 11 Indicators', 'apca'); ?></h1>
       </div>
     </div>
   </header>
