@@ -14,49 +14,6 @@ function apca_setup_theme() {
 }
 add_action('after_setup_theme', 'apca_setup_theme');
 
-/*
- * Required plugins
- */
-function apca_register_required_plugins() {
-  $plugins = array(
-    array(
-      'name' => 'Advanced Custom Fields Repeater & Flexible Content Fields Collapser',
-      'slug' => 'advanced-custom-field-repeater-collapser',
-      'required' => true,
-      'force_activation' => false
-    )
-  );
-  if(defined('ACF_REPEATER_FIELD_KEY')) {
-    $plugins[] = array(
-      'name' => 'Advanced Custom Fields: Repeater Field',
-      'slug' => 'repeater-field',
-      'required' => true,
-      'force_activation' => false,
-      'source' => 'https://download.advancedcustomfields.com/' . ACF_REPEATER_FIELD_KEY . '/trunk/'
-    );
-  }
-  if(defined('ACF_OPTIONS_PAGE_KEY')) {
-    $plugins[] = array(
-      'name' => 'Advanced Custom Fields: Options Page',
-      'slug' => 'options-page',
-      'required' => true,
-      'force_activation' => false,
-      'source' => 'https://download.advancedcustomfields.com/' . ACF_OPTIONS_PAGE_KEY . '/trunk/'
-    );
-  }
-  $options = array(
-    'default_path'  => '',
-    'menu'      => 'apca-install-plugins',
-    'has_notices'  => true,
-    'dismissable'  => true,
-    'dismiss_msg'  => '',
-    'is_automatic'  => false,
-    'message'    => ''
-  );
-  tgmpa($plugins, $options);
-}
-add_action('tgmpa_register', 'apca_register_required_plugins');
-
 /**
  * Register our sidebars and widgetized areas.
  *
