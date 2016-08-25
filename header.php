@@ -20,13 +20,13 @@
             if($lang == 'pb' || $lang == 'pt_BR') :
               ?>
               <a href="<?php echo home_url('/'); ?>">
-                <span class="product">Áreas protegidas e clima</span>
-                <span class="subject">na Amazônia</span>
+                <span class="subject">Áreas protegidas e clima</span>
+                <span class="product">na Amazônia</span>
               </a>
             <?php elseif($lang == 'es') : ?>
               <a href="<?php echo home_url('/'); ?>">
-                <span class="product">Áreas protegidas y el clima</span>
-                <span class="subject">en la Amazonia</span>
+                <span class="subject">Áreas protegidas y el clima</span>
+                <span class="product">en la Amazonia</span>
               </a>
             <?php else : ?>
               <a href="<?php echo home_url('/'); ?>">

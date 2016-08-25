@@ -4,7 +4,11 @@
   <header class="archive-header">
     <div class="container">
       <div class="twelve columns">
-        <h1><?php _e('Aichi 11 Indicators', 'apca'); ?></h1>
+        <?php
+        $title = get_field('indicator_page_title', 'option');
+        $title = $title ? $title : __('Aichi 11 Indicators', 'apca');
+        ?>
+        <h1><?php echo $title; ?></h1>
       </div>
     </div>
   </header>

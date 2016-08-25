@@ -241,6 +241,20 @@ class APCA_Indicators {
     		'id' => 'acf_indicator-settings',
     		'title' => 'Indicator Settings',
     		'fields' => array (
+          array (
+            'key' => 'field_indicator_page_title',
+            'label' => __('Indicator page title', 'apca'),
+            'name' => 'indicator_page_title',
+            'type' => $this->get_text_field(),
+            'required' => 0,
+            'column_width' => '',
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'formatting' => 'html',
+            'maxlength' => '',
+          ),
     			array (
     				'key' => 'field_indicator_page_content',
     				'label' => __('Page content', 'apca'),
