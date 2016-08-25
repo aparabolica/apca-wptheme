@@ -54,7 +54,7 @@ class APCA_Custom_Featured_Image {
     if($meta_key == '_thumbnail_id') {
       remove_filter('get_post_metadata', array($this, 'get_custom_thumbnail_id'));
       $custom = get_field('featured_image');
-      if(!is_single() && $custom) {
+      if(!is_single() && !is_admin() && $custom) {
         $metadata = $custom['id'];
       }
       add_filter('get_post_metadata', array($this, 'get_custom_thumbnail_id'), 100, 4);
