@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 16:46-0300\n"
+"POT-Creation-Date: 2016-09-10 13:32-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: archive-indicator.php:7 homepage.php:120
-msgid "Indicators"
+#: archive-indicator.php:9
+msgid "Aichi 11 Indicators"
 msgstr ""
 
-#: functions.php:59
+#: functions.php:24
 msgid "Footer sidebar"
 msgstr ""
 
-#: header.php:43
+#: header.php:47
 msgid "Search anything..."
 msgstr ""
 
@@ -47,6 +47,10 @@ msgstr ""
 
 #: homepage.php:105
 msgid "Amazon Protected Areas"
+msgstr ""
+
+#: homepage.php:120
+msgid "Indicators"
 msgstr ""
 
 #: homepage.php:120 single-indicator.php:37
@@ -175,10 +179,14 @@ msgid "Indicator settings"
 msgstr ""
 
 #: inc/indicators.php:246
+msgid "Indicator page title"
+msgstr ""
+
+#: inc/indicators.php:260
 msgid "Page content"
 msgstr ""
 
-#: inc/indicators.php:255
+#: inc/indicators.php:269
 msgid "Page disclaimer"
 msgstr ""
 
