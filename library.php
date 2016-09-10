@@ -63,7 +63,7 @@
   wp_reset_query();
   ?>
   <div class="container">
-    <div class="six columns">
+    <div class="twelve columns">
       <?php
       $publications_id = get_cat_ID('publications');
       $publications_link = get_category_link($publications_id);
@@ -72,37 +72,6 @@
         ?>
         <section id="publications" class="page-section">
           <h2 class="section-title"><?php _e('Publications', 'apca'); ?> <a class="button" href="<?php echo $publications_link ?>"><?php _e('View all publications', 'apca'); ?></a></h2>
-          <?php
-          while(have_posts()) :
-            the_post();
-            ?>
-            <article class="post-item clearfix">
-              <div class="three columns">
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-              </div>
-              <div class="nine columns">
-                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <?php the_excerpt(); ?>
-              </div>
-            </article>
-            <?php
-          endwhile;
-          ?>
-        </section>
-        <?php
-      endif;
-      wp_reset_query();
-      ?>
-    </div>
-    <div class="six columns">
-      <?php
-      $docs_id = get_cat_ID('policy documents');
-      $docs_link = get_category_link($docs_id);
-      query_posts('posts_per_page=1&category_name=policy-documents');
-      if(have_posts()) :
-        ?>
-        <section id="policy-documents" class="page-section">
-          <h2 class="section-title"><?php _e('Policy Documents', 'apca'); ?> <a class="button" href="<?php echo $docs_link ?>"><?php _e('View all policy documents', 'apca'); ?></a></h2>
           <?php
           while(have_posts()) :
             the_post();
