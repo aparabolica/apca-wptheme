@@ -329,6 +329,28 @@ input[type='submit'] {
       letter-spacing: .5rem;
       position: relative;
     }
+    nav#term-children {
+      text-align: center;
+      ul {
+        li {
+          a {
+            margin: 0 1rem;
+            padding: 1rem 2rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            &:hover {
+              background: rgba(255,255,255,0.3);
+              // color: #333;
+            }
+          }
+          &.active {
+            a {
+              background: #fff;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
