@@ -50,19 +50,21 @@
             endwhile;
             ?>
           </nav>
-          <?php
-          while(have_posts()) : the_post();
-            ?>
-            <article class="carousel-item" data-postid="<?php the_ID(); ?>">
-              <a href="<?php the_field('url'); ?>" <?php if(get_field('target_blank')) echo 'target="_blank"'; ?>><?php the_post_thumbnail('highlight'); ?></a>
-              <div class="carousel-item-meta">
-                <h2><a href="<?php the_field('url'); ?>" <?php if(get_field('target_blank')) echo 'target="_blank"'; ?>><?php the_title(); ?></a></h2>
-                <?php the_excerpt(); ?>
-              </div>
-            </article>
+          <div class="carousel-items">
             <?php
-          endwhile;
-          ?>
+            while(have_posts()) : the_post();
+              ?>
+              <article class="carousel-item" data-postid="<?php the_ID(); ?>">
+                <a href="<?php the_field('url'); ?>" <?php if(get_field('target_blank')) echo 'target="_blank"'; ?>><?php the_post_thumbnail('highlight'); ?></a>
+                <div class="carousel-item-meta">
+                  <h2><a href="<?php the_field('url'); ?>" <?php if(get_field('target_blank')) echo 'target="_blank"'; ?>><?php the_title(); ?></a></h2>
+                  <?php the_excerpt(); ?>
+                </div>
+              </article>
+              <?php
+            endwhile;
+            ?>
+          </div>
         </section>
         <?php
       endif;
