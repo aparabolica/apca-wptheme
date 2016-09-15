@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 16:46-0300\n"
-"PO-Revision-Date: 2016-08-26 11:21-0300\n"
+"POT-Creation-Date: 2016-09-10 18:47-0300\n"
+"PO-Revision-Date: 2016-09-15 16:40-0300\n"
 "Last-Translator: Stefano Biagioni Wrobleski <stefano@infoamazonia.org>, "
 "2016\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/ecologia-"
@@ -20,15 +20,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: archive-indicator.php:7 homepage.php:120
-msgid "Indicators"
-msgstr "Indicadores"
+#: archive-indicator.php:9
+msgid "Aichi 11 Indicators"
+msgstr "Indicadores da meta Aichi 11"
 
-#: functions.php:59
+#: functions.php:24
 msgid "Footer sidebar"
 msgstr "Barra lateral do rodapé"
 
-#: header.php:43
+#: header.php:47
 msgid "Search anything..."
 msgstr "Busque qualquer coisa..."
 
@@ -36,23 +36,27 @@ msgstr "Busque qualquer coisa..."
 msgid "Learn more"
 msgstr "Saiba mais"
 
-#: homepage.php:76
+#: homepage.php:78
 msgid "Connect with us"
 msgstr "Conecte-se conosco"
 
-#: homepage.php:82 library.php:40
+#: homepage.php:84 library.php:40
 msgid "Latest news"
 msgstr "Últimas notícias"
 
-#: homepage.php:98
+#: homepage.php:100
 msgid "Meet the library"
 msgstr "Conheça o acervo"
 
-#: homepage.php:105
+#: homepage.php:107
 msgid "Amazon Protected Areas"
 msgstr "Áreas Protegidas da Amazônia"
 
-#: homepage.php:120 single-indicator.php:37
+#: homepage.php:122
+msgid "Indicators"
+msgstr "Indicadores"
+
+#: homepage.php:122 single-indicator.php:37
 msgid "View all indicators"
 msgstr "Veja todos os indicadores"
 
@@ -178,10 +182,14 @@ msgid "Indicator settings"
 msgstr "Configurações de indicadores"
 
 #: inc/indicators.php:246
+msgid "Indicator page title"
+msgstr "Título da página dos indicadores"
+
+#: inc/indicators.php:260
 msgid "Page content"
 msgstr "Conteúdo da página"
 
-#: inc/indicators.php:255
+#: inc/indicators.php:269
 msgid "Page disclaimer"
 msgstr "Aviso da página"
 
@@ -196,11 +204,3 @@ msgstr "Publicações"
 #: library.php:74
 msgid "View all publications"
 msgstr "Veja todas as publicações"
-
-#: library.php:105
-msgid "Policy Documents"
-msgstr "Documentos de política"
-
-#: library.php:105
-msgid "View all policy documents"
-msgstr "Veja todos os documentos de política"

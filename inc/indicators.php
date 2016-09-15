@@ -239,7 +239,7 @@ class APCA_Indicators {
     if(function_exists("register_field_group")) {
     	register_field_group(array (
     		'id' => 'acf_indicator-settings',
-    		'title' => 'Indicator Settings',
+    		'title' => __('Indicator settings', 'apca'),
     		'fields' => array (
           array (
             'key' => 'field_indicator_page_title',
