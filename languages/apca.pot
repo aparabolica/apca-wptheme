@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-10 18:47-0300\n"
+"POT-Creation-Date: 2016-09-15 16:47-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,7 +174,7 @@ msgstr ""
 msgid "Add Row"
 msgstr ""
 
-#: inc/indicators.php:232
+#: inc/indicators.php:232 inc/indicators.php:242
 msgid "Indicator settings"
 msgstr ""
 
