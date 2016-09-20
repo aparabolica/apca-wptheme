@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-10 18:47-0300\n"
-"PO-Revision-Date: 2016-09-15 16:40-0300\n"
+"POT-Creation-Date: 2016-09-20 15:56-0300\n"
+"PO-Revision-Date: 2016-09-20 18:17-0300\n"
 "Last-Translator: Miguel Peixe <miguspeixe@gmail.com>, 2016\n"
 "Language-Team: Spanish (https://www.transifex.com/ecologia-digital/"
 "teams/63779/es/)\n"
@@ -132,15 +132,15 @@ msgstr "No hay indicadores encontrados en el basurero."
 msgid "APCA Indicators"
 msgstr "Indicadores APCA"
 
-#: inc/indicators.php:89 inc/indicators.php:157
+#: inc/indicators.php:89
 msgid "Not accomplished"
 msgstr "No logrado"
 
-#: inc/indicators.php:92 inc/indicators.php:158
+#: inc/indicators.php:92
 msgid "Partially accomplished"
 msgstr "Logrado en parte"
 
-#: inc/indicators.php:95 inc/indicators.php:159
+#: inc/indicators.php:95
 msgid "Accomplished"
 msgstr "Logrado"
 
@@ -155,6 +155,18 @@ msgstr "Texto de status de indicador"
 #: inc/indicators.php:153
 msgid "Indicator status"
 msgstr "Status de indicador"
+
+#: inc/indicators.php:157
+msgid "No significant progress"
+msgstr "Sin progreso significativo"
+
+#: inc/indicators.php:158
+msgid "Insufficient progress"
+msgstr "Progreso insuficiente"
+
+#: inc/indicators.php:159
+msgid "On track"
+msgstr "Buen progreso"
 
 #: inc/indicators.php:167
 msgid "Indicator links"
@@ -176,7 +188,7 @@ msgstr "Título del enlace"
 msgid "Add Row"
 msgstr "Añadir linea"
 
-#: inc/indicators.php:232
+#: inc/indicators.php:232 inc/indicators.php:242
 msgid "Indicator settings"
 msgstr "Configuraciones de indicador"
 
