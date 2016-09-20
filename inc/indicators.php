@@ -154,9 +154,9 @@ class APCA_Indicators {
     				'name' => 'indicator_status',
     				'type' => 'select',
     				'choices' => array (
-    					1 => __('Not accomplished', 'apca'),
-    					2 => __('Partially accomplished', 'apca'),
-    					3 => __('Accomplished', 'apca'),
+    					1 => __('No significant progress', 'apca'),
+    					2 => __('Insufficient progress', 'apca'),
+    					3 => __('On track', 'apca'),
     				),
     				'default_value' => 1,
     				'allow_null' => 0,
