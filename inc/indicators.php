@@ -86,13 +86,13 @@ class APCA_Indicators {
     $label = '';
     switch($status) {
       case '1':
-        $label = __('Not accomplished', 'apca');
+        $label = __('No significant progress', 'apca');
         break;
       case '2':
-        $label = __('Partially accomplished', 'apca');
+        $label = __('Insufficient progress', 'apca');
         break;
       case '3':
-        $label = __('Accomplished', 'apca');
+        $label = __('On track', 'apca');
         break;
     }
     return $label;
