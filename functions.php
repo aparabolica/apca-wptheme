@@ -1,7 +1,7 @@
 <?php
 
 function apca_scripts() {
-  wp_register_style('apca-main', get_stylesheet_directory_uri() . '/css/main.css', array('main'), '0.1.1');
+  wp_register_style('apca-main', get_stylesheet_directory_uri() . '/css/main.css', array('main'), '0.1.2');
   wp_enqueue_style('apca-main');
 }
 add_action('wp_enqueue_scripts', 'apca_scripts');
@@ -32,6 +32,7 @@ function apca_widgets_init() {
 }
 add_action( 'widgets_init', 'apca_widgets_init' );
 
+include_once(STYLESHEETPATH . '/inc/countries.php');
 include_once(STYLESHEETPATH . '/inc/indicators.php');
 include_once(STYLESHEETPATH . '/inc/custom-featured-image.php');
 
@@ -42,3 +43,15 @@ function apca_disable_basins() {
   remove_filter('the_permalink', array($arp_basins, 'the_permalink'));
 }
 add_action('init', 'apca_disable_basins', 2);
+
+function apca_country_post_meta() {
+  the_terms(get_the_ID(), 'country', '<p class="country"><span class="fa fa-globe"></span>', ', ', '</p>');
+}
+add_action('arp_pre_single_post_meta', 'apca_country_post_meta');
+
+function apca_public_policies_query($query) {
+  if($query->is_category('policy-documents') && !is_admin()) {
+    // $query->set();
+  }
+}
+add_action('pre_get_posts', 'apca_public_policies_query');
