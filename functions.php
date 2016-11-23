@@ -49,13 +49,33 @@ function apca_country_post_meta() {
 }
 add_action('arp_pre_single_post_meta', 'apca_country_post_meta');
 
-function apca_public_policies_query($query) {
-  if(!is_admin()) {
-    if($query->is_category('policy-documents') || $query->is_category('public-policies')) {
-      $query->set('orderby', 'meta_value');
-      $query->set('meta_key', '_countries');
-      $query->set('order', 'ASC');
+function apca_country_ordered_query($query) {
+  $cats = array(
+    'policy-documents',
+    'public-policies'
+  );
+  $country_ordered = false;
+  if(!is_admin() && $query->is_category()) {
+    // Country ordered cat
+    foreach($cats as $cat) {
+      if($query->is_category($cat))
+        $country_ordered = true;
+    }
+    if(!$country_ordered) {
+      // Country ordered subcat
+      $term = $query->get_queried_object();
+      if($term->parent) {
+        $parent = get_term($term->parent);
+        if(in_array($parent->slug, $cats)) {
+          $country_ordered = true;
+        }
+      }
     }
   }
+  if($country_ordered) {
+    $query->set('orderby', 'meta_value');
+    $query->set('meta_key', '_countries');
+    $query->set('order', 'ASC');
+  }
 }
-add_action('pre_get_posts', 'apca_public_policies_query');
+add_action('pre_get_posts', 'apca_country_ordered_query');
