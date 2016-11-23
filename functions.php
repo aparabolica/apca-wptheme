@@ -50,8 +50,12 @@ function apca_country_post_meta() {
 add_action('arp_pre_single_post_meta', 'apca_country_post_meta');
 
 function apca_public_policies_query($query) {
-  if($query->is_category('policy-documents') && !is_admin()) {
-    // $query->set();
+  if(!is_admin()) {
+    if($query->is_category('policy-documents') || $query->is_category('public-policies')) {
+      $query->set('orderby', 'meta_value');
+      $query->set('meta_key', '_countries');
+      $query->set('order', 'ASC');
+    }
   }
 }
 add_action('pre_get_posts', 'apca_public_policies_query');

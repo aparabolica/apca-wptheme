@@ -4,6 +4,7 @@ class APCA_Countries {
 
   function __construct() {
     add_action('init', array($this, 'register_taxonomy'));
+    add_action('save_post', array($this, 'save_post'));
   }
 
   function register_taxonomy() {
@@ -32,6 +33,34 @@ class APCA_Countries {
     );
 
     register_taxonomy( 'country', array( 'post' ), $args );
+  }
+
+  function save_post($post_id) {
+
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+      return;
+    // AJAX? Not used here
+    if ( defined( 'DOING_AJAX' ) && DOING_AJAX )
+      return;
+    // Check user permissions
+    if ( ! current_user_can( 'edit_post', $post_id ) )
+      return;
+    if ( wp_is_post_revision( $post_id ) )
+      return;
+
+    $post_countries = wp_get_post_terms($post_id, 'country', array(
+      'orderby' => 'name',
+      'order' => 'ASC'
+    ));
+
+    $countries = array();
+
+    foreach($post_countries as $country) {
+      $countries[] = $country->name;
+    }
+
+    update_post_meta($post_id, '_countries', implode(',', $countries));
+
   }
 
 }
