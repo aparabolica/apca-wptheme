@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>">
-  <div class="container">
+  <div class="container sub-container">
     <div class="eight columns">
       <?php if(!is_post_type_archive() && !is_category()) : ?>
         <p class="type">
