@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-20 15:56-0300\n"
+"POT-Creation-Date: 2016-12-16 15:33-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,10 @@ msgstr ""
 
 #: archive-indicator.php:9
 msgid "Aichi 11 Indicators"
+msgstr ""
+
+#: footer.php:22 homepage.php:78
+msgid "Connect with us"
 msgstr ""
 
 #: functions.php:24
@@ -33,28 +37,70 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
-#: homepage.php:78
-msgid "Connect with us"
-msgstr ""
-
-#: homepage.php:84 library.php:40
+#: homepage.php:96 library.php:40
 msgid "Latest news"
 msgstr ""
 
-#: homepage.php:100
+#: homepage.php:112
 msgid "Meet the library"
 msgstr ""
 
-#: homepage.php:107
+#: homepage.php:119
 msgid "Amazon Protected Areas"
 msgstr ""
 
-#: homepage.php:122
+#: homepage.php:134
 msgid "Indicators"
 msgstr ""
 
-#: homepage.php:122 single-indicator.php:37
+#: homepage.php:134 single-indicator.php:37
 msgid "View all indicators"
+msgstr ""
+
+#: inc/countries.php:13
+msgctxt "taxonomy general name"
+msgid "Countries"
+msgstr ""
+
+#: inc/countries.php:14
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr ""
+
+#: inc/countries.php:15
+msgid "Search Countries"
+msgstr ""
+
+#: inc/countries.php:16
+msgid "All Countries"
+msgstr ""
+
+#: inc/countries.php:17
+msgid "Parent Country"
+msgstr ""
+
+#: inc/countries.php:18
+msgid "Parent Country:"
+msgstr ""
+
+#: inc/countries.php:19
+msgid "Edit Country"
+msgstr ""
+
+#: inc/countries.php:20
+msgid "Update Country"
+msgstr ""
+
+#: inc/countries.php:21
+msgid "Add New Country"
+msgstr ""
+
+#: inc/countries.php:22
+msgid "New Country Name"
+msgstr ""
+
+#: inc/countries.php:23
+msgid "Countries"
 msgstr ""
 
 #: inc/custom-featured-image.php:19
@@ -130,16 +176,16 @@ msgstr ""
 msgid "APCA Indicators"
 msgstr ""
 
-#: inc/indicators.php:89
-msgid "Not accomplished"
+#: inc/indicators.php:89 inc/indicators.php:157
+msgid "No significant progress"
 msgstr ""
 
-#: inc/indicators.php:92
-msgid "Partially accomplished"
+#: inc/indicators.php:92 inc/indicators.php:158
+msgid "Insufficient progress"
 msgstr ""
 
-#: inc/indicators.php:95
-msgid "Accomplished"
+#: inc/indicators.php:95 inc/indicators.php:159
+msgid "On track"
 msgstr ""
 
 #: inc/indicators.php:138
@@ -152,18 +198,6 @@ msgstr ""
 
 #: inc/indicators.php:153
 msgid "Indicator status"
-msgstr ""
-
-#: inc/indicators.php:157
-msgid "No significant progress"
-msgstr ""
-
-#: inc/indicators.php:158
-msgid "Insufficient progress"
-msgstr ""
-
-#: inc/indicators.php:159
-msgid "On track"
 msgstr ""
 
 #: inc/indicators.php:167
@@ -200,6 +234,14 @@ msgstr ""
 
 #: inc/indicators.php:269
 msgid "Page disclaimer"
+msgstr ""
+
+#: inc/publications.php:14
+msgid "Publication"
+msgstr ""
+
+#: inc/publications.php:18 inc/publications.php:19
+msgid "Publication file"
 msgstr ""
 
 #: library.php:40

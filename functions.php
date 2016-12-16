@@ -34,6 +34,7 @@ add_action( 'widgets_init', 'apca_widgets_init' );
 
 include_once(STYLESHEETPATH . '/inc/countries.php');
 include_once(STYLESHEETPATH . '/inc/indicators.php');
+include_once(STYLESHEETPATH . '/inc/publications.php');
 include_once(STYLESHEETPATH . '/inc/custom-featured-image.php');
 
 function apca_disable_basins() {
