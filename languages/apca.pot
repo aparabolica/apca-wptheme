@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-16 15:33-0200\n"
+"POT-Creation-Date: 2016-12-19 12:19-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Footer sidebar"
 msgstr ""
 
-#: header.php:47
+#: header.php:55
 msgid "Search anything..."
 msgstr ""
 
@@ -236,11 +236,11 @@ msgstr ""
 msgid "Page disclaimer"
 msgstr ""
 
-#: inc/publications.php:14
+#: inc/publications.php:21
 msgid "Publication"
 msgstr ""
 
-#: inc/publications.php:18 inc/publications.php:19
+#: inc/publications.php:25
 msgid "Publication file"
 msgstr ""
 
@@ -254,4 +254,8 @@ msgstr ""
 
 #: library.php:74
 msgid "View all publications"
+msgstr ""
+
+#: post-list-item.php:26
+msgid "Download publication"
 msgstr ""
