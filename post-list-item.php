@@ -18,6 +18,16 @@
         <p class="date"><span class="fa fa-calendar"></span> <?php echo get_the_date(); ?></p>
       </aside>
       <?php the_excerpt(); ?>
+      <?php
+      if(has_category('publications')) :
+        $file = get_field('publication_file');
+        if($file) :
+          ?>
+          <a class="button" href="<?php echo $file; ?>"><?php _e('Download publication', 'apca'); ?></a>
+          <?php
+        endif;
+      endif;
+      ?>
     </div>
     <?php if(has_post_thumbnail()) : ?>
       <div class="four columns">
