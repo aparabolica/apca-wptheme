@@ -7,28 +7,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: apca-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-20 15:56-0300\n"
-"PO-Revision-Date: 2016-09-20 18:17-0300\n"
-"Last-Translator: Stefano Biagioni Wrobleski <stefano@infoamazonia.org>, "
-"2016\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/ecologia-"
-"digital/teams/63779/pt_BR/)\n"
+"POT-Creation-Date: 2016-12-19 12:19-0200\n"
+"PO-Revision-Date: 2016-12-20 16:53-0200\n"
+"Last-Translator: Stefano Biagioni Wrobleski <stefano@infoamazonia.org>, 2016\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/ecologia-digital/teams/63779/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: archive-indicator.php:9
 msgid "Aichi 11 Indicators"
 msgstr "Indicadores da meta Aichi 11"
 
+#: footer.php:22 homepage.php:78
+msgid "Connect with us"
+msgstr "Conecte-se conosco"
+
 #: functions.php:24
 msgid "Footer sidebar"
 msgstr "Barra lateral do rodapé"
 
-#: header.php:47
+#: header.php:55
 msgid "Search anything..."
 msgstr "Busque qualquer coisa..."
 
@@ -36,29 +38,71 @@ msgstr "Busque qualquer coisa..."
 msgid "Learn more"
 msgstr "Saiba mais"
 
-#: homepage.php:78
-msgid "Connect with us"
-msgstr "Conecte-se conosco"
-
-#: homepage.php:84 library.php:40
+#: homepage.php:96 library.php:40
 msgid "Latest news"
 msgstr "Últimas notícias"
 
-#: homepage.php:100
+#: homepage.php:112
 msgid "Meet the library"
 msgstr "Conheça o acervo"
 
-#: homepage.php:107
+#: homepage.php:119
 msgid "Amazon Protected Areas"
 msgstr "Áreas Protegidas da Amazônia"
 
-#: homepage.php:122
+#: homepage.php:134
 msgid "Indicators"
 msgstr "Indicadores"
 
-#: homepage.php:122 single-indicator.php:37
+#: homepage.php:134 single-indicator.php:37
 msgid "View all indicators"
 msgstr "Veja todos os indicadores"
+
+#: inc/countries.php:13
+msgctxt "taxonomy general name"
+msgid "Countries"
+msgstr "Países"
+
+#: inc/countries.php:14
+msgctxt "taxonomy singular name"
+msgid "Country"
+msgstr "País"
+
+#: inc/countries.php:15
+msgid "Search Countries"
+msgstr "Buscar países"
+
+#: inc/countries.php:16
+msgid "All Countries"
+msgstr "Todos os países"
+
+#: inc/countries.php:17
+msgid "Parent Country"
+msgstr "País pai"
+
+#: inc/countries.php:18
+msgid "Parent Country:"
+msgstr "País pai:"
+
+#: inc/countries.php:19
+msgid "Edit Country"
+msgstr "Editar país"
+
+#: inc/countries.php:20
+msgid "Update Country"
+msgstr "Atualizar país"
+
+#: inc/countries.php:21
+msgid "Add New Country"
+msgstr "Adicionar novo país"
+
+#: inc/countries.php:22
+msgid "New Country Name"
+msgstr "Novo nome de país"
+
+#: inc/countries.php:23
+msgid "Countries"
+msgstr "Países"
 
 #: inc/custom-featured-image.php:19
 msgid "Featured image for lists"
@@ -133,17 +177,17 @@ msgstr "Nenhum indicador encontrado na lixeira."
 msgid "APCA Indicators"
 msgstr "Indicadores do APCA"
 
-#: inc/indicators.php:89
-msgid "Not accomplished"
-msgstr "Não concluído"
+#: inc/indicators.php:89 inc/indicators.php:157
+msgid "No significant progress"
+msgstr "Sem progresso significativo"
 
-#: inc/indicators.php:92
-msgid "Partially accomplished"
-msgstr "Parcialmente concluído"
+#: inc/indicators.php:92 inc/indicators.php:158
+msgid "Insufficient progress"
+msgstr "Progresso insuficiente"
 
-#: inc/indicators.php:95
-msgid "Accomplished"
-msgstr "Concluído"
+#: inc/indicators.php:95 inc/indicators.php:159
+msgid "On track"
+msgstr "Bom progresso"
 
 #: inc/indicators.php:138
 msgid "Indicator data"
@@ -156,18 +200,6 @@ msgstr "Texto de status do indicador"
 #: inc/indicators.php:153
 msgid "Indicator status"
 msgstr "Status do indicador"
-
-#: inc/indicators.php:157
-msgid "No significant progress"
-msgstr "Sem progresso significativo"
-
-#: inc/indicators.php:158
-msgid "Insufficient progress"
-msgstr "Progresso insuficiente"
-
-#: inc/indicators.php:159
-msgid "On track"
-msgstr "Bom progresso"
 
 #: inc/indicators.php:167
 msgid "Indicator links"
@@ -205,6 +237,14 @@ msgstr "Conteúdo da página"
 msgid "Page disclaimer"
 msgstr "Aviso da página"
 
+#: inc/publications.php:21
+msgid "Publication"
+msgstr "Publicação"
+
+#: inc/publications.php:25
+msgid "Publication file"
+msgstr "Arquivo da publicação"
+
 #: library.php:40
 msgid "View all news"
 msgstr "Veja todas as notícias"
@@ -216,3 +256,7 @@ msgstr "Publicações"
 #: library.php:74
 msgid "View all publications"
 msgstr "Veja todas as publicações"
+
+#: post-list-item.php:26
+msgid "Download publication"
+msgstr "Baixar publicação"
